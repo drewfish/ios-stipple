@@ -26,15 +26,6 @@ class ViewController: UIViewController {
         totalUI.text = outputFormatter.stringFromNumber(total)
     }
 
-//    // -1 == leans left
-//    //  0 == centered
-//    // +1 == leans right
-//    func motionUpdate(lean: Int) {
-//        //println("--lean \(lean)")
-//        tipChooserUI.selectedSegmentIndex = lean + 1
-//        update(self)
-//    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
