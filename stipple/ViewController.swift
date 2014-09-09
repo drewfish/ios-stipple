@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MotionModelDelegate {
     @IBOutlet weak var billUI: UITextField!
     @IBOutlet weak var tipValueUI: UILabel!
     @IBOutlet weak var tipChooserUI: UISegmentedControl!
@@ -26,14 +26,23 @@ class ViewController: UIViewController {
         totalUI.text = outputFormatter.stringFromNumber(total)
     }
 
-//    // -1 == leans left
-//    //  0 == centered
-//    // +1 == leans right
-//    func motionUpdate(lean: Int) {
-//        //println("--lean \(lean)")
-//        tipChooserUI.selectedSegmentIndex = lean + 1
-//        update(self)
-//    }
+    func motionUpdateLeanLeft() {
+        var idx = tipChooserUI.selectedSegmentIndex - 1
+        idx = max(idx, 0)
+        if idx != tipChooserUI.selectedSegmentIndex {
+            tipChooserUI.selectedSegmentIndex = idx
+            update(self)
+        }
+    }
+
+    func motionUpdateLeanRight() {
+        var idx = tipChooserUI.selectedSegmentIndex + 1
+        idx = min(idx, 2)
+        if idx != tipChooserUI.selectedSegmentIndex {
+            tipChooserUI.selectedSegmentIndex = idx
+            update(self)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +62,8 @@ class ViewController: UIViewController {
             billUI.text = inputFormatter.stringFromNumber(gotBill)
             update(self)
         }
+
+        (UIApplication.sharedApplication().delegate as AppDelegate).motionModel.delegate = self
     }
 
     override func viewWillAppear(animated: Bool) {

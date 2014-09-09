@@ -12,6 +12,7 @@
 		616EFFDB19BBD4AE007DE7B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616EFFD919BBD4AE007DE7B0 /* Main.storyboard */; };
 		616EFFDD19BBD4AE007DE7B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616EFFDC19BBD4AE007DE7B0 /* Images.xcassets */; };
 		616EFFE919BBD4AE007DE7B0 /* stippleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616EFFE819BBD4AE007DE7B0 /* stippleTests.swift */; };
+		616F1D2C19BE82CC00904B58 /* MotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616F1D2B19BE82CC00904B58 /* MotionModel.swift */; };
 		61DC961619BCEDAB00F261D6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC961519BCEDAB00F261D6 /* SettingsViewController.swift */; };
 		61DC961919BD4EB000F261D6 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC961819BD4EB000F261D6 /* SettingsModel.swift */; };
 		61DC961C19BD647E00F261D6 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC961B19BD647E00F261D6 /* extensions.swift */; };
@@ -37,6 +38,7 @@
 		616EFFE219BBD4AE007DE7B0 /* stippleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stippleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		616EFFE719BBD4AE007DE7B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		616EFFE819BBD4AE007DE7B0 /* stippleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stippleTests.swift; sourceTree = "<group>"; };
+		616F1D2B19BE82CC00904B58 /* MotionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionModel.swift; sourceTree = "<group>"; };
 		61DC961519BCEDAB00F261D6 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
 		61DC961819BD4EB000F261D6 /* SettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		61DC961B19BD647E00F261D6 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		61DC961A19BD4EB900F261D6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				616F1D2B19BE82CC00904B58 /* MotionModel.swift */,
 				61DC961819BD4EB000F261D6 /* SettingsModel.swift */,
 			);
 			name = Models;
@@ -244,6 +247,7 @@
 				61DC961C19BD647E00F261D6 /* extensions.swift in Sources */,
 				61DC961919BD4EB000F261D6 /* SettingsModel.swift in Sources */,
 				616EFFD819BBD4AE007DE7B0 /* ViewController.swift in Sources */,
+				616F1D2C19BE82CC00904B58 /* MotionModel.swift in Sources */,
 				616EFFD619BBD4AE007DE7B0 /* AppDelegate.swift in Sources */,
 				61DC961619BCEDAB00F261D6 /* SettingsViewController.swift in Sources */,
 			);
