@@ -9,7 +9,7 @@ This is an iOS demo application for calculating tips at restaurants.
 
  * [x] *required* -- basic tip calculator functionality
  * [x] *required* -- settings page for default tip percentage
- * [x] *optional* -- bill amount remembered between states, w/10 minute expiry
+ * [x] *optional* -- bill amount remembered between runs, w/10 minute expiry
  * [x] *optional* -- locale specific currency display and input
  * [x] *extra* -- tilt device to change tip percentage ("tip to tip")
  * [x] *extra* -- styled with colors, fonts, AppIcon, and LaunchImage (from working on wrong assignment)
